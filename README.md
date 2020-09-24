@@ -9,13 +9,16 @@ Android 8.0.0(use .apk file)
 PC(use .swf file)  
 ![https://raw.githubusercontent.com/evofan/as_test_tictactoe/master/screenshot/pic_on_pc.png](https://raw.githubusercontent.com/evofan/as_test_tictactoe/master/screenshot/pic_on_pc.png "image")  
 
-10年位前にAir for Android書き出しで作った三目並べのゲーム。
+10年位前にAir for Android書き出しで作った三目並べのゲーム。  
 当時のver.は、Androidは2.3.x、Airは3.2ぐらいだったと思う。
 
 昔のファイルを整理してたら出てきて、手元のスマホで試したらそのまま動いてビックリ。  
-（スマホにAirが入ってないのでインストール促されるのと、アプリに署名の証明書が無いのでセキュリティの警告が出る）  
+（Airが入ってない場合インストール促されるのと、アプリに署名証明書が無いのでセキュリティ警告が出る）  
 
 AS3.0なので外部化した記憶があるが、これは内部にスクリプトが書いてある。  
 状態遷移（State Pattern）でゲームの進行しているが、中の記述は綺麗とは言えない。  
 折角なので時間見てTypeScript(JavaScript) + WebGL(Canvas)で書き直すかしてみたい。  
 PC版も今年でChromeのflash playerサポートが終わるので、見れなくなるだろうし。  
+
+![https://raw.githubusercontent.com/evofan/as_test_tictactoe/master/screenshot/pic_hittest.png](https://raw.githubusercontent.com/evofan/as_test_tictactoe/master/screenshot/pic_hittest.png "image")  
+当たり判定のテスト。ヒットボックス（矩形領域）で取るか、中心点で取るか、等。  
